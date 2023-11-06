@@ -1,0 +1,121 @@
+.footer {
+    background-color: $echoleaf;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        flex-wrap: wrap;
+        gap: 20px 40px;
+
+        padding: 23px 0;
+
+        @media(max-width: $t690) {
+            justify-content: center;
+        }
+    }
+
+    li:not(:first-child) {
+        color: $illusivegrey;
+        font-size: 1rem;
+        font-weight: 400;  
+    }
+    
+    &__contacts {
+        display: flex;
+        
+        justify-content: space-between;
+        flex-direction: column;
+
+        &-telcom {
+            p {
+                color: $illusivegrey;
+            }
+        }
+
+        @media(max-width: $t690) {
+            flex-basis: 100%;
+            flex-direction: row;
+        }
+        @media(max-width: $mobile) {
+            flex-wrap: wrap;
+            div {
+                flex-basis: 100%;
+                justify-content: center;
+                text-align: center;
+
+                margin-bottom: 15px;
+            }
+        }
+    }
+    &__shortcut {
+        display: flex;
+        justify-content: space-between;
+        gap: 0 60px;
+
+        @media(max-width: $t690) {
+            flex-basis: 100%;
+        }
+
+        @media(max-width: $t510) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @media(max-width: $mobile) {
+            &-list {
+                flex-basis: 100%;
+                text-align: center;
+                margin-bottom: 15px;
+            }
+        }
+
+        a {
+            @media(max-width: $t510) {
+                font-size: 1.3rem;
+            }
+        }
+        img {
+            cursor: pointer;
+        }
+
+        
+        &-list.media {
+            .copyright {
+                font-size: 0.8rem;
+            }
+            .social {
+                display: flex;
+                gap: 30px;
+            }
+
+            @media(max-width: $t510) {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                .socialbox {
+                    flex-basis: 100%;
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        width: 45px;
+                        height: 45px;
+                    }
+                }
+
+                .copyright {
+                    font-size: 1rem;
+                }
+            }
+
+            
+        }
+        
+        .line {
+            margin-top: 15px;
+        }
+    }
+
+}

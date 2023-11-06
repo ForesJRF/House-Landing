@@ -1,0 +1,65 @@
+.header {
+    width: 100%;
+    background-color: $echoleaf;
+
+    .container {
+        padding: 32px 0;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+
+        @media(max-width: $t510) {
+            padding: 16px 0;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__logo {
+        @media(max-width: $t510) {
+            flex-basis: 100%;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__nav {
+        @media(max-width: $t510) {
+            width: 100%;
+        }
+    }
+
+    &__list {
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+        text-align: center;
+
+        @media(max-width: $t510) {
+            width: 100%;
+        }
+
+        @media(max-width: $mobile) {
+            gap: 20px;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+        }
+
+        .cart {
+            height: 22px;
+
+            img {
+                display: inline-block;
+                cursor: pointer;
+            }
+        }
+        
+
+    }
+}

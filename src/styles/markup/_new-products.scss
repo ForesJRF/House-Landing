@@ -1,0 +1,43 @@
+.newproducts {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("#{$images-path}/new-products-wall-p.jpg");
+
+    .container {
+        padding: 70px 0;
+        color: $purewhite;
+
+        @media(max-width: $mobile) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    }
+    &__title {
+        display: flex;
+        align-items: bottom;
+        gap: 20px;
+        margin-bottom: 20px;
+
+        &-img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    &__subtitle {
+        max-width: 540px;
+
+        margin-bottom: 60px;
+    }
+    &__btn {
+        background-color: $sunshine;
+        color: $softgray;
+
+        &:hover {
+            background: transparent;
+            color: $sunshine;
+            border-color: $sunshine;
+        }
+    }
+}

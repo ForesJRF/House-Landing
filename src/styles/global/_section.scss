@@ -1,0 +1,13 @@
+section, header, footer {
+    padding: 0 60px;
+
+    @media(max-width: $t690) {
+        padding: 0 39px;
+    }
+    @media(max-width: $t510) {
+        padding: 0 33px;
+    }
+    @media(max-width: $mobile) {
+        padding: 0 15px;
+    }
+}

@@ -1,0 +1,15 @@
+.button {
+    padding: 20px 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid $juiceleaf;
+    color: $juiceleaf;
+    gap: 6px;
+    font-weight: 400;
+
+    &:hover {
+        background-color: $juiceleaf;
+        color: $purewhite;
+        transition-duration: 0.5s;
+    }
+}
